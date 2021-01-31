@@ -8,7 +8,7 @@ class ConnectionBase {
    */
   Future<List> getHttpJSONData(String keyword) async {
     String url =
-        "https://pixabay.com/api/?key=17839383-92a2fe442da3fbcf9bf2001cf";
+        "https://pixabay.com/api/?key=★★自分のAPIキー★★";
     url += "&q=" + keyword;
     url += "&image_type=photo";
     var response = await http.get(Uri.encodeFull(url),
